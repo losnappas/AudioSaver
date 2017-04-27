@@ -1,6 +1,7 @@
 var ui = require('./ui');
 var sniff = require("./sniff");
 var conf = require('./conf');
+console.error('index.js');
 
 require("sdk/simple-prefs").on("TargetDir", function() {
   ui.updateUI();

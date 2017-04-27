@@ -1,5 +1,5 @@
 var preferences = require('sdk/simple-prefs').prefs;
-
+console.error('conf.js');
 exports.get = get;
 exports.set = set;
 exports.getPath = getPath;

@@ -4,6 +4,7 @@ var conf = require('./conf');
 var sniff = require("./sniff");
 var file = require("./file");
 
+console.error('ui.js');
 exports.updateUI = updateUI;
 
 var button = buttons.ActionButton({
@@ -16,6 +17,7 @@ var button = buttons.ActionButton({
 function handleClick(state) {
   if (conf.getPath()) {
     if (!conf.get("Enabled")) {
+      console.log("1");
       sniff.start();
       conf.set("Enabled", true);
     } else {
